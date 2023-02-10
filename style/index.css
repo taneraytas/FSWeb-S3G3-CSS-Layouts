@@ -1,102 +1,140 @@
 /* CSS stillerinizi buraya girin */
 html {
-    font-size: 12px;
-    background-color: #E5E5E5;
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Orbitron', sans-serif;}
+   font-size: 12px;
+   background-color: #E5E5E5;
+   width: 100vw;
+   height: 100vh;
+   font-family: 'Orbitron', sans-serif;
+}
 
 .container {
    width: 95%;
    margin: auto;
 }
-body{
-    margin: 0;
-    padding: 0;
+
+body {
+   margin: 0;
+   padding: 0;
 }
 
 
-header,footer{
-    background-color: #14213D;
+header,
+footer {
+   background-color: #14213D;
 }
 
-h1{
+h1 {
    display: inline-block;
    position: relative;
-    color: #FCA311;
+   color: #FCA311;
 }
 
-nav{
-    display: block;
-    /* justify-content: flex-start; */
+nav {
+   display: block;
+   /* justify-content: flex-start; */
 }
 
 
-nav a{
+nav a {
    display: inline-block;
-    color:#FCA311;
-    text-decoration: none;
-    background-color: #000000;
-    padding: 0.5rem ;
-    margin: 0.2%;
- }
-nav a:hover{
-   background-color:#FCA311;
+   color: #FCA311;
+   text-decoration: none;
+   background-color: #000000;
+   padding: 0.5rem;
+   margin: 0.2%;
+}
+
+nav a:hover {
+   background-color: #FCA311;
    color: #000000;
    transition: 700ms;
 }
-.ust{
-    display: flex;
-    align-items:center ;
-    justify-content: space-between;
-    width: 100%;
+
+.ust {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
 }
- .img-main{
-    padding: 0.5%;
-    border-color: #FCA311;
-    background-color:#14213D;
-    margin: 1% ;
-    width: 33%;
- }
 
- 
- h2{
-    font-size: 2rem;
- }
+.img-main {
+   padding: 0.5%;
+   border-color: #FCA311;
+   background-color: #14213D;
+   margin: 1%;
+   width: 33%;
+}
 
- .middle-cont{
+
+h2 {
+   font-size: 2rem;
+}
+
+.middle-cont {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
    text-align: center;
    margin-top: 1%;
 }
-.top_cont p{
-   font-size: 1vw;
+
+
+
+button {
+   color: #14213D;
+   text-decoration: none;
+   background-color: #FCA311;
+   padding: 0.5rem;
+   margin: 0.2%;
+   border: 1;
 }
- button{
-    color: #14213D;
-    text-decoration: none;
-    background-color:#FCA311 ;
-    padding: 0.5rem ;
-    margin: 0.2%;
-    border: 1;
+
+
+
+.img-divs img {
+   padding: 2px;
+   background-color: #14213D;
+   width: 25vw;
+}
+
+
+.cls-footer {
+   display: flex;
+   justify-content: center;
+   color: #E5E5E5;
+}
+
+footer button {
+   text-align: center;
+}
+
+
+@media only screen and (max-width: 620px) {
+   header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .ust {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .middle-cont{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .img-divs img{
+      width: 40vw;
+   }
+
+   h2{
+      text-align: center;
+   }
+ .top_cont{
+   text-align: center;
  }
 
-
-
- .img-divs img{
-    padding: 2px;
-    background-color: #14213D;
- }
-
-
- .cls-footer{
-    display: flex;
-    justify-content: center;
-    color: #E5E5E5;
- }
-
- footer button{
-    text-align: center;
- }
+}
